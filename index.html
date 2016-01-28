@@ -33,20 +33,20 @@
 
             //Hours
             ctx.beginPath();
-            ctx.arc(300,300,200,degToRad(270),degToRad((hours*15)-90));
+            ctx.arc(300,300,250,degToRad(270),degToRad((hours*15)-90));
             ctx.stroke();
             //Minutes
             ctx.beginPath();
-            ctx.arc(300,300,170,degToRad(270),degToRad((minutes*6)-90));
+            ctx.arc(300,300,220,degToRad(270),degToRad((minutes*6)-90));
             ctx.stroke();
             //Seconds
             ctx.beginPath();
-            ctx.arc(300,300,140,degToRad(270),degToRad((seconds*6)-90));
+            ctx.arc(300,300,190,degToRad(270),degToRad((seconds*6)-90));
             ctx.stroke();
             //Date
             ctx.font = "30px Arial bold";
             ctx.fillStyle='purple';
-            ctx.fillText(today, 160, 250);
+            ctx.fillText(today, 160, 300);
             //Time
             ctx.font = "14px Arial";
             ctx.fillStyle='purple';
