@@ -1,6 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style type="text/css">
+
+		@font-face {
+
+    font-family: 'burnstown_damregular';
+
+    src: url('burnstow-webfont.eot');
+
+    src: url('burnstow-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('burnstow-webfont.woff') format('woff'),
+
+         url('burnstow-webfont.ttf') format('truetype'),
+
+         url('burnstow-webfont.svg#burnstown_damregular') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+
+
+}
+
+	
+
+		.yazi{font-family:burnstown_damregular;font-size:300px;}
+
+	</style>
+
     <script  type="text/javascript" >
        function init() {
             // js goes in here.
@@ -46,7 +76,7 @@
             //Date
             ctx.font = "36px Sans Serif bold";
             ctx.fillStyle='#0B0B61';
-            ctx.fillText(today, 175, 300);
+            ctx.fillText(<div class="yazi">today</div>, 175, 300);
             //Time
             ctx.font = "18px Arial";
             ctx.fillStyle='#0B0B61';
