@@ -124,12 +124,32 @@ a:hover {
 	left: 84%;
 	bottom: 39px;
 }
+.stars{
+	width:128px;
+	height:128px;
+	position: absolute;
+	left: 89%;
+	bottom: 40px;
+	
+}
 a:hover + .rocket {
 	-webkit-transform: translateY(-1000px);
 	-moz-transform: translateY(-1000px);
 	-ms-transform: translateY(-1000px);
 	-o-transform: translateY(-1000px);
 	transform: translateY(-1000px);
+
+	-webkit-transition: all 4s cubic-bezier(.98,0,1,.28);
+	-moz-transition: all 4s cubic-bezier(.98,0,1,.28);
+	-o-transition: all 4s cubic-bezier(.98,0,1,.28);
+	transition: all 4s cubic-bezier(.98,0,1,.28);
+}
+a:hover + .stars {
+	-webkit-transform: translateX(-1000px);
+	-moz-transform: translateX(-1000px);
+	-ms-transform: translateX(-1000px);
+	-o-transform: translateX(-1000px);
+	transform: translateX(-1000px);
 
 	-webkit-transition: all 4s cubic-bezier(.98,0,1,.28);
 	-moz-transition: all 4s cubic-bezier(.98,0,1,.28);
@@ -145,6 +165,10 @@ a:hover + .rocket {
 <a href="#">و</a>
 <div class="rocket">
   <img src="star.png" width="128" height="128"/> 
+  
+</div>
+<div class="stars">
+	<img src="star.png" width="128" height="128"/> 
 </div>
 
 <div>
