@@ -87,7 +87,9 @@
         a {
 	display: inline-block;
 	width: 110px;
-	height: 30px;
+	-moz-border-radius:55px;
+        -webkit-border-radius: 55px;
+	height: 110px;
 	color: #fff;
 	text-align: center;
 	font: bold 10pt Arial, sans-serif;
@@ -97,7 +99,7 @@
 	line-height: 30px;
 	margin: 0px 5px;
 	box-shadow: inset 0px 1px 0px rgba(250,250,250,.3), 0px 1px 1px rgba(0,0,0,.1) ;
-	border: 1px solid #8eac52;
+	border: 1px solid #000000;
 	background: #252356;
 	background: -moz-linear-gradient(top, #252356 0%, #0d0b44 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#252356), color-stop(100%,#0d0b44));
@@ -131,10 +133,10 @@ a:hover + .rocket {
 	-o-transform: translateY(-700px);
 	transform: translateY(-700px);
 
-	-webkit-transition: all 6s cubic-bezier(.98,0,1,.28);
-	-moz-transition: all 6s cubic-bezier(.98,0,1,.28);
-	-o-transition: all 6s cubic-bezier(.98,0,1,.28);
-	transition: all 6s cubic-bezier(.98,0,1,.28);
+	-webkit-transition: all 4s cubic-bezier(.98,0,1,.28);
+	-moz-transition: all 4s cubic-bezier(.98,0,1,.28);
+	-o-transition: all 4s cubic-bezier(.98,0,1,.28);
+	transition: all 4s cubic-bezier(.98,0,1,.28);
 }
 
     </style>
@@ -142,7 +144,7 @@ a:hover + .rocket {
     <title></title>
 </head>
 <body style="background-color: #0B0B61; width: 100%;">
-<a class="rocket-launch" href="#">Tıkla</a>
+<a class="rocket-launch" href="#">Uçur</a>
 <div class="rocket">
   <img src="star.png" width="128" height="128"/>  
 </div>
