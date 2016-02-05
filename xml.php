@@ -7,8 +7,8 @@ try{
     foreach($xml->sehirler as $val) {
         $data = $val['ili'];
         if($data == "ISTANBUL") {
-           echo "Enyüksek sıcaklık :". $val->Mak."<br>";
-           echo "Enydüşük sıcaklık :". $val->Min."<br>";
+          $max = "Enyüksek sıcaklık :". $val->Mak."<br>";
+          $min = "Enydüşük sıcaklık :". $val->Min."<br>";
         }
 
     }
