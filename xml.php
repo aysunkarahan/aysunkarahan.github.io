@@ -1,5 +1,6 @@
 <?php 
-
+$max = $_POST["max"];
+$min = $_POST["min"]; 
 // xml okuma
 $url = "http://www.mgm.gov.tr/ftpdata/analiz/sonsoa.xml";
 try{
@@ -7,8 +8,8 @@ try{
     foreach($xml->sehirler as $val) {
         $data = $val['ili'];
         if($data == "ISTANBUL") {
-          echo "Enyüksek sıcaklık :". $val->Mak."<br>";
-          echo "Enydüşük sıcaklık :". $val->Min."<br>";
+          $max="Enyüksek sıcaklık :". $val->Mak."<br>";
+          $max="Enydüşük sıcaklık :". $val->Min."<br>";
         }
 
     }
