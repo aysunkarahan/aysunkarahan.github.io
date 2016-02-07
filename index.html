@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script>
+        var x = new XMLHttpRequest();
+        x.open("GET", "http://www.mgm.gov.tr/ftpdata/analiz/sonsoa.xml", true);
+        x.onreadystatechange = function () {
+         if (x.readyState == 4 && x.status == 200)
+        {
+         var doc = x.responseXML;
+         var ili = doc.getElementsByTagName("sehirler")[0].getElementsByTagName("ili")[0].firstChild.nodeValue;
+         }
+        };
+        x.send(null);
+    </script>
     <script  type="text/javascript" >
        function init() {
             // js goes in here.
@@ -79,6 +91,7 @@
 <div class="in">
   <img src="istanbul.png" width="100%" />
 </div>
+<div class="dif" id="ili"></div>
 
 </body>
 </html>
