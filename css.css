@@ -41,8 +41,9 @@
         
         a {
 	display: inline-block;
-	width: 50%;
+	width: 70%;
 	height: 20%;
+	margin-left: 20%
 	color: #fff;
 	text-align: center;
 	font: bold 30pt Arial, sans-serif;
